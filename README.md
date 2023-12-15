@@ -1,4 +1,5 @@
-#Social interactions do not  impact infection status in griffon vultures 
+# Social interactions do not  impact infection status in griffon vultures 
+
 Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta Acácio2, Gideon Vaadia2, Kaija Gahm1, Orr Spiegel2, Noa Pinter-Wollman1
 
 1Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
