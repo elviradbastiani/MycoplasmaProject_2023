@@ -1,14 +1,2 @@
-# Social interactions do not  impact infection status in griffon vultures 
-
-Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta Acácio2, Gideon Vaadia2, Kaija Gahm1, Orr Spiegel2, Noa Pinter-Wollman1
-
-1Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
-2School of Zoology, Faculty of Life Sciences, Tel Aviv University, Tel Aviv, Israel.
-3Department of Avian Diseases, Professor Kimron Str 1, Kimron Veterinary Institute (KVI), POB12, Beit Dagan, Israel.
-#These authors contributed equally.
-
-*Corresponding author: Elvira D’Bastiani e-mail: elviradbastiani@gmail.com
-
-
-Presented below is a visual representation illustrating the interconnections among the functions in the R script, along with the recommended sequence for their utilization.
-
+# Co-roosting: Testing Data for Spatial Distance Effect
+Co-roosting network: A roosting interaction is recorded when two vultures are within 25 meters of one another while not flying during the night (Figure 4b in the main manuscript). Since individuals are tracked only during the day, interactions during the night are determined by the last position of the day, if not by the first position of the following morning. We exclude interactions that occur within roosting areas during the daytime. We distinguished between direct and indirect social interactions, as outlined in Table 1 in the main manuscript. For roosting interactions, we classified an interaction as direct if vultures were within 25 meters of each other for a single night. Indirect interactions were defined when the positions of two vultures were within 25 meters, persisting for more than one night during roosting. We examined predictions using alternative distance values (meters = {10, 25, 50, 75, 100}), with further details available in the supplementary material, specifically in Table S1-S4 and Figure S1-S8.
