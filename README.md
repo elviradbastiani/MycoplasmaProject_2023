@@ -1,14 +1,2 @@
-# Social interactions do not  impact infection status in griffon vultures 
-
-Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta Acácio2, Gideon Vaadia2, Kaija Gahm1, Orr Spiegel2, Noa Pinter-Wollman1
-
-1Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
-2School of Zoology, Faculty of Life Sciences, Tel Aviv University, Tel Aviv, Israel.
-3Department of Avian Diseases, Professor Kimron Str 1, Kimron Veterinary Institute (KVI), POB12, Beit Dagan, Israel.
-#These authors contributed equally.
-
-*Corresponding author: Elvira D’Bastiani e-mail: elviradbastiani@gmail.com
-
-
-Presented below is a visual representation illustrating the interconnections among the functions in the R script, along with the recommended sequence for their utilization.
-
+# Co-feeding: Testing Data for Windows Effect
+Co-feeding network: A feeding interaction is recorded when two vultures are within 25 meters of one another, not flying (i.e., moving at a speed of less than 5 m/s), during the day (Figure 4a in the main manuscript). We distinguished between direct and indirect social interactions, as outlined in Table 1 in the main manuscript. Direct interactions were identified when two vultures were within 25 meters while feeding, with a separation of 30 minutes or less between these positions. Indirect interactions were defined when the positions of two vultures were within 25 meters while feeding, but at least 4 hours elapsed between the two GPS fixes. As the incubation period of Mycoplasma can vary (typically ranging from 2 to 3 days up to 23 days), we used 14 days as the midpoint of this range. We also examined predictions using alternative values of the incubation period of Mycoplasma days (days = {7, 14, 21, 28}) (see details in the supplementary material Table S1-S4 and Figure S1-S8).
