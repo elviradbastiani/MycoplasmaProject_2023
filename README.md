@@ -10,3 +10,16 @@ Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta
 *Corresponding author: Elvira D’Bastiani e-mail: elviradbastiani@gmail.com
 
 Input data:
+
+        CutOffRegion.kml
+
+        all_captures_carmel_2010-2021.csv
+
+        capture_sites.csv
+
+        new_roosts.kml
+
+        output_infection_and_traits_2021.rda
+
+        output_infection_and_traits_2022.rda
+
