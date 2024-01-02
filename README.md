@@ -9,5 +9,3 @@ Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta
 
 *Corresponding author: Elvira D’Bastiani e-mail: elviradbastiani@gmail.com
 
-The Griffon Vulture, with a weight of approximately 6-8 kg and a wingspan of about 2.5 m (Figure 2), is a social species that aggregates at communal roosts and around carcasses (REF).
-
