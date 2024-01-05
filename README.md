@@ -10,5 +10,10 @@ Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta
 *Corresponding author: Elvira D’Bastiani e-mail: elviradbastiani@gmail.com
 
 
-File "Supplementar_S1_Script_1_download_movebank.R" - script to download the data from movebank
+Files:
+"Supplementar_S1_Script_1_download_movebank.R" - script to download the data from movebank
+"Supplementar_S2_Script_2_checking_individual_names_from_GPS_Ornitella_Inpa_data.R" - script to check individual names from GPS data for Ornitella and Inpa from movebank
+"Supplementar_S4_Script_4_Separating_days.R" - script S4: Separating the 14 days of movement ecology data for griffon vultures prior to sampling.
+
+
 
