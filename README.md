@@ -10,5 +10,5 @@ Elvira D’Bastiani1*#, Nili Anglister2#, Inna Lysynyansky3, Inna Mikula3, Marta
 *Corresponding author: Elvira D’Bastiani e-mail: elviradbastiani@gmail.com
 
 
-#Script S1. Download the data from movebank
+File "Supplementar_S1_Script_1_download_movebank.R" - script to download the data from movebank
 
