@@ -1,4 +1,4 @@
-```markdown
+
 # Social Interactions and Mycoplasma Infection in Griffon Vultures
 
 ## Authors
@@ -34,4 +34,4 @@ Uncovering the ways in which pathogens spread has important implications for pop
 
 ## Keywords
 feeding, infectious disease, movement ecology, pathogen transmission, roosting, social interactions.
-```
+
