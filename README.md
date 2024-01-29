@@ -14,8 +14,7 @@
 
 #These authors contributed equally.
 
-***Corresponding author**: Elvira D’Bastiani  
-**Email**: elviradbastiani@gmail.com
+***Corresponding author**: Elvira D’Bastiani - email: elviradbastiani@gmail.com
 
 **ORCIDs:**
 - Elvira D’Bastiani: [0000-0002-8615-2763](https://orcid.org/0000-0002-8615-2763)
