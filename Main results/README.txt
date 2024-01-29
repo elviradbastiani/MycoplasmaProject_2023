@@ -1,5 +1,10 @@
-# Main results
+Data from: D’Bastiani, E.*, Anglister, N., Lysynyansky, I., Mikula, I., Acácio, M., Vaadia, G., Gahm, K., Spiegel, O., Pinter-Wollman, N.. "Social Interactions and Mycoplasma Infection in Griffon Vultures." Journal of [Journal Name], [Year], [Volume(Issue)], [Page Range]. DOI: [DOI Number].
 
-Co-feeding network: A feeding interaction is recorded when two vultures are within 25 meters of one another, not flying (i.e., moving at a speed of less than 5 m/s), during the day (Figure 4a in the main manuscript). We distinguished between direct and indirect social interactions, as outlined in Table 1 in the main manuscript. Direct interactions were identified when two vultures were within 25 meters while feeding, with a separation of 30 minutes or less between these positions. Indirect interactions were defined when the positions of two vultures were within 25 meters while feeding, but at least 4 hours elapsed between the two GPS fixes. 
+Supplementar information S4:
+Data for main results: We examined direct social interactions of griffon vultures when roosting (Figure 1a, Table 1-3). To infer the interaction we used GPS-tracking data from the 14-day period preceding the capture and sampling of vultures for mycoplasma for building a social network (Figure 1c). In our tracking dataset we observed a total of 106 individuals interacting while feeding and 114 individuals interacting while roosting. We examined the relationship between social behavior and infection status considering mycoplasma identification at the genus level. 
 
-Co-roosting network: A roosting interaction is recorded when two vultures are within 25 meters of one another while not flying during the night (Figure 4b in the main manuscript). Since individuals are tracked only during the day, interactions during the night are determined by the last position of the day, if not by the first position of the following morning. We exclude interactions that occur within roosting areas during the daytime. We distinguished between direct and indirect social interactions, as outlined in Table 1 in the main manuscript. For roosting interactions, we classified an interaction as direct if vultures were within 25 meters of each other for a single night. Indirect interactions were defined when the positions of two vultures were within 25 meters, persisting for more than one night during roosting.
+  File 1. README.txt
+  File 2. cofeeding_results_DI_25meters_14days.txt 
+  File 3. cofeeding_results_IND_25meters_14days.txt
+  File 4. coroosting_results_DI_25meters_14days.txt
+  File 5. coroosting_results_IND_25meters_14days.txt
