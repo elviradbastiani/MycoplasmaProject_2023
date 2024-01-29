@@ -2,15 +2,20 @@
 # Social Interactions and Mycoplasma Infection in Griffon Vultures
 
 ## Authors
-- Elvira D’Bastiani*# 
-- Nili Anglister#
-- Inna Lysynyansky
-- Inna Mikula
-- Marta Acácio
-- Gideon Vaadia
-- Kaija Gahm
-- Orr Spiegel
-- Noa Pinter-Wollman
+- Elvira D’Bastiani1*#
+- Nili Anglister2#
+- Inna Lysynyansky3
+- Inna Mikula3
+- Marta Acácio2
+- Gideon Vaadia2
+- Kaija Gahm1
+- Orr Spiegel2 - (PI)
+- Noa Pinter-Wollman1 Project Title (PI)
+
+## institutions
+- 1Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
+- 2School of Zoology, Faculty of Life Sciences, Tel Aviv University, Tel Aviv, Israel.
+- 3Mycoplasma unit, Department of Avian Diseases, Professor Kimron Str 1, Kimron Veterinary Institute (KVI), POB12, Beit Dagan, Israel.
 
 #These authors contributed equally.
 
@@ -33,4 +38,24 @@ Uncovering the ways in which pathogens spread has important implications for pop
 
 ## Keywords
 feeding, infectious disease, movement ecology, pathogen transmission, roosting, social interactions.
+
+Naming:
+20221009-067-SeqRaw-iSeq100-WT13-V1.seq
+20220314-048-DatAn-EXC-ALL-V2.1.csv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
