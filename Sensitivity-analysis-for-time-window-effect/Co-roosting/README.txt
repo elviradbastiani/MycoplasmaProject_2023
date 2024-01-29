@@ -2,3 +2,13 @@ Data from: D’Bastiani, E.*, Anglister, N., Lysynyansky, I., Mikula, I., Acáci
 
 Supplementar information S4:
 A roosting interaction is recorded when two vultures are within 25 meters of one another while not flying during the night (Figure 4b in the main manuscript). Since individuals are tracked only during the day, interactions during the night are determined by the last position of the day, if not by the first position of the following morning. We exclude interactions that occur within roosting areas during the daytime. We distinguished between direct and indirect social interactions, as outlined in Table 1 in the main manuscript. For roosting interactions, we classified an interaction as direct if vultures were within 25 meters of each other for a single night. Indirect interactions were defined when the positions of two vultures were within 25 meters, persisting for more than one night during roosting. As the incubation period of Mycoplasma can vary (typically ranging from 2 to 3 days up to 23 days), we used 14 days as the midpoint of this range. We also examined predictions using alternative windows values under other values of the incubation period of Mycoplasma days (days = {7, 14, 21, 28}) (see details in the supplementary material Table S3-S6 and Figure S1-S8).
+
+File 1. README.txt
+File 2. results_DI_25meters_14days.txt
+File 3. results_DI_25meters_21days.txt
+File 4. results_DI_25meters_28days.txt
+File 5. results_DI_25meters_7days.txt
+File 6. results_IND_25meters_14days.txt
+File 7. results_IND_25meters_21days.txt
+File 8. results_IND_25meters_28days.txt
+File 9. results_IND_25meters_7days.txt
