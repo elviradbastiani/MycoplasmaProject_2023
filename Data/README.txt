@@ -1,12 +1,12 @@
-File 1. README.txt
-
-File 2. Movebank_2021_day_1_meters_25_window_14.rda - Sampling date 1
-File 3. Movebank_2021_day_2_meters_25_window_14.rda - Sampling date 2
+File 1. Movebank_2021_day_1_meters_25_window_14.rda - Sampling date 1
+File 2. Movebank_2021_day_2_meters_25_window_14.rda - Sampling date 2
 File 3. Movebank_2021_day_3_meters_25_window_14.rda - Sampling date 3
 File 4. Movebank_2021_day_4_meters_25_window_14.rda - Sampling date 4
 File 5. Movebank_2021_day_5_meters_25_window_14.rda - Sampling date 5
 File 6. Movebank_2022_day_1_meters_25_window_14.rda - Sampling date 6
 File 7. Movebank_2022_day_2_meters_25_window_14.rda - Sampling date 7
+
+File 8. README.txt
 
 File 9. location_to_feeding_situation.kml - Location data
 File 10. location_roosting_situation.kml - Location data
