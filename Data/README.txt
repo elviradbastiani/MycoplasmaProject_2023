@@ -11,5 +11,5 @@ File 8. README.txt
 File 9. location_to_feeding_situation.kml - Location data
 File 10. location_roosting_situation.kml - Location data
 
-File 11. output_infection_and_traits_2021_Github.rda - Data on infection status and host traits from 2021
-File 12. output_infection_and_traits_2022_Github.rda - Data on infection status and host traits from 2022
+File 11. output_infection_and_traits_2021_Github.rda - Data on infection status and host attributes from 2021
+File 12. output_infection_and_traits_2022_Github.rda - Data on infection status and host attributes from 2022
