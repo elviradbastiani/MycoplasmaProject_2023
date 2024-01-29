@@ -12,9 +12,9 @@
 - Orr Spiegel
 - Noa Pinter-Wollman
 
-*These authors contributed equally.
+*#These authors contributed equally.
 
-**Corresponding author**: Elvira D’Bastiani  
+***Corresponding author**: Elvira D’Bastiani  
 **Email**: elviradbastiani@gmail.com
 
 **ORCIDs:**
