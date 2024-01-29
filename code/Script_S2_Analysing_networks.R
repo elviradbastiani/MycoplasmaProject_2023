@@ -12,7 +12,7 @@
 
 ###############################################################################################################################
 ###############################################################################################################################
-#S3 Script: Analysing the social networks of griffon vultures.
+#Script to analysing the social networks of griffon vultures
 ###############################################################################################################################
 ###############################################################################################################################
 
@@ -30,22 +30,22 @@ library(igraph) # for network analysis
 
 
 # Step 5: Loading the sampled data for mycoplasma sampling data of individuals used in 2021 #OBSERVATION: To test to 2022, simply change the year throughout the entire script.
-load("output_infection_and_traits_2021.rda")#mycoplasma_data
-mycoplasma_sampling_date<-sort(unique(output_infection_and_traits_2021$sample_event_date), F)
+load("output_infection_and_attributes_2021.rda")#mycoplasma_data
+mycoplasma_sampling_date<-sort(unique(output_infection_and_attributes_2021$sample_event_date), F)
 mycoplasma_sampling_date
 
 #checking
-output_infection_and_traits_2021$edb_id
-length(output_infection_and_traits_2021$edb_id)
+output_infection_and_attributes_2021$edb_id
+length(output_infection_and_attributes_2021$edb_id)
 
-output_infection_and_traits_2021$pos_neg
-length(output_infection_and_traits_2021$pos_neg)
+output_infection_and_attributes_2021$pos_neg
+length(output_infection_and_attributes_2021$pos_neg)
 
-output_infection_and_traits_2021$sex
-length(output_infection_and_traits_2021$sex)
+output_infection_and_attributes_2021$sex
+length(output_infection_and_attributes_2021$sex)
 
-output_infection_and_traits_2021$age
-length(output_infection_and_traits_2021$age)
+output_infection_and_attributes_2021$age
+length(output_infection_and_attributes_2021$age)
 
 # Step 6: Define the distThreshold in meters
 distance = c(25)  # You can also include c(10, 25, 50, 75, 100)
@@ -71,7 +71,7 @@ for (i in 1:length(mycoplasma_sampling_date)) {
                                                   color=as.character())
           
       # Step 10: Filter the mycoplasma data for the current sampling date
-      output_infection_day <- output_infection_and_traits_2021 %>%
+      output_infection_day <- output_infection_and_attributes_2021 %>%
                                   filter(sample_event_date == mycoplasma_sampling_date[i])
           
       # Step 11: Load the direct network roost for the current date, distance, and window
@@ -92,7 +92,7 @@ for (i in 1:length(mycoplasma_sampling_date)) {
       # Step 15: Normalize population strength by individual number
       S_direct <- S_direct/sum(S_direct)
       
-      #Individuals traits
+      #Individuals attributes
       # Step 16: Set default values
       infection_i<- NA
       age_i<- NA
@@ -112,26 +112,26 @@ for (i in 1:length(mycoplasma_sampling_date)) {
         S_direct_j<-S_direct[j]
         S_direct_j
         
-        # Step 18: Retrieve individual traits from the mycoplasma data
-        traits_day<-output_infection_day[output_infection_day$edb_id==name_direct_indj,]
+        # Step 18: Retrieve individual attributes from the mycoplasma data
+        attributes_day<-output_infection_day[output_infection_day$edb_id==name_direct_indj,]
         
         # Step 19: Determine infection status, age, sex, and color for the individual
-        if (nrow(traits_day)==0) {
+        if (nrow(attributes_day)==0) {
           infection_i<- NA
           age_i<- NA
           sex_i<- NA
           color_i<- "grey"
-        } else if (nrow(traits_day)>=1) {
+        } else if (nrow(attributes_day)>=1) {
           
-          if (unique(traits_day$pos_neg)=="neg") {
+          if (unique(attributes_day$pos_neg)=="neg") {
             infection_i<- 0
-            age_i<- unique(traits_day$age)
-            sex_i<- unique(traits_day$sex)
+            age_i<- unique(attributes_day$age)
+            sex_i<- unique(attributes_day$sex)
             color_i<- "blue"
-          } else if (unique(traits_day$pos_neg)=="pos") {
+          } else if (unique(attributes_day$pos_neg)=="pos") {
             infection_i<- 1
-            age_i<- unique(traits_day$age)
-            sex_i<- unique(traits_day$sex)
+            age_i<- unique(attributes_day$age)
+            sex_i<- unique(attributes_day$sex)
             color_i<- "red"
           }
         }
@@ -178,7 +178,7 @@ for (i in 1:length(mycoplasma_sampling_date)) {
       )
       
       # Step 24: Filter the mycoplasma data for the current sampling date
-      output_infection_day <- output_infection_and_traits_2021 %>%
+      output_infection_day <- output_infection_and_attributes_2021 %>%
         filter(sample_event_date == mycoplasma_sampling_date[i])
       
       # Step 25: Load the indirect network roost for the current date, distance, and window
@@ -200,7 +200,7 @@ for (i in 1:length(mycoplasma_sampling_date)) {
       S_indirect <- S_indirect / sum(S_indirect)
       
       
-      #Individuals traits
+      #Individuals attributes
       # Step 30: Set default values
       infection_i<- NA
       age_i<- NA
@@ -220,25 +220,25 @@ for (i in 1:length(mycoplasma_sampling_date)) {
         S_indirect_j <- S_indirect[j]
         S_indirect_j
         
-        # Step 32: Retrieve individual traits from the mycoplasma data
-        traits_day <- output_infection_day[output_infection_day$edb_id == name_indirect_indj,]
+        # Step 32: Retrieve individual attributes from the mycoplasma data
+        attributes_day <- output_infection_day[output_infection_day$edb_id == name_indirect_indj,]
         
         # Step 33: Determine infection status, age, sex, and color for the individual
-        if (nrow(traits_day) == 0) {
+        if (nrow(attributes_day) == 0) {
           infection_i <- NA
           age_i <- NA
           sex_i <- NA
           color_i <- "grey"
-        } else if (nrow(traits_day) >= 1) {
-          if (unique(traits_day$pos_neg) == "neg") {
+        } else if (nrow(attributes_day) >= 1) {
+          if (unique(attributes_day$pos_neg) == "neg") {
             infection_i <- 0
-            age_i <- unique(traits_day$age)
-            sex_i <- unique(traits_day$sex)
+            age_i <- unique(attributes_day$age)
+            sex_i <- unique(attributes_day$sex)
             color_i <- "blue"
-          } else if (unique(traits_day$pos_neg) == "pos") {
+          } else if (unique(attributes_day$pos_neg) == "pos") {
             infection_i <- 1
-            age_i <- unique(traits_day$age)
-            sex_i <- unique(traits_day$sex)
+            age_i <- unique(attributes_day$age)
+            sex_i <- unique(attributes_day$sex)
             color_i <- "red"
           }
         }
