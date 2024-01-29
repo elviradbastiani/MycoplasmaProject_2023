@@ -5,4 +5,4 @@ Supplementar information S2:
     File 2. Script_1a_Creating_networks_to_co_feeding.R - Script to creating networks to co-feeding interactions.
     File 3. Script_1b_Creating_networks_to_co_roosting.R - Script to creating networks to co_roosting interactions.
     File 4. Script_2_Analysing_networks.R - Script to analysing the social position in the network (degree, betweenness, and strength) of griffon vultures.
-    File 5. Script_S3_GLMM_analysis.R - Script to analysing the relationship between mycoplasma infection status and social position (degree, betweenness, and strength) of griffon vultures.
+    File 5. Script_3_GLMM_analysis.R - Script to analysing the relationship between mycoplasma infection status and social position (degree, betweenness, and strength) of griffon vultures.
