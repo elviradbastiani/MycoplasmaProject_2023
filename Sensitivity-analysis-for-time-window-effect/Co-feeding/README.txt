@@ -2,3 +2,13 @@ Data from: D’Bastiani, E.*, Anglister, N., Lysynyansky, I., Mikula, I., Acáci
 
 Supplementar information S4:
 Testing data for time windows size effect for co-feeding situation: A feeding interaction is recorded when two vultures are within 25 meters of one another, not flying (i.e., moving at a speed of less than 5 m/s), during the day (Figure 4a in the main manuscript). We distinguished between direct and indirect social interactions, as outlined in Table 1 in the main manuscript. Direct interactions were identified when two vultures were within 25 meters while feeding, with a separation of 30 minutes or less between these positions. Indirect interactions were defined when the positions of two vultures were within 25 meters while feeding, but at least 4 hours elapsed between the two GPS fixes. As the incubation period of Mycoplasma can vary (typically ranging from 2 to 3 days up to 23 days), we used 14 days as the midpoint of this range. We also examined predictions using alternative values of the incubation period of Mycoplasma days (days = {7, 14, 21, 28}) (see details in the supplementary material Table S3-S6 and Figure S1-S8).
+
+File 1. README.txt
+File 2. results_DI_25meters_14days.txt
+File 3. results_DI_25meters_21days.txt
+File 4. results_DI_25meters_28days.txt
+File 5. results_DI_25meters_7days.txt
+File 6. results_IND_25meters_14days.txt
+File 7. results_IND_25meters_21days.txt
+File 8. results_IND_25meters_28days.txt
+File 9. results_IND_25meters_7days.txt
