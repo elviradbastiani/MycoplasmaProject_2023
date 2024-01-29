@@ -12,7 +12,7 @@
 
 ###############################################################################################################################
 ###############################################################################################################################
-#S2 Script: Separating the window days of movement ecology data for griffon vultures prior to Mycoplasma spp. sampling in 2021.
+# Script to creating networks to co-roosting interactions
 ###############################################################################################################################
 ###############################################################################################################################
 
@@ -43,15 +43,15 @@ library(mapview)
 library(ggpubr)
 
 # Step 5: Loading the sampled data for mycoplasma sampling data of individuals used in 2021 #OBSERVATION: To test to 2022, simply change the year throughout the entire script.
-load("output_infection_and_traits_2021.rda")
+load("output_infection_and_attributes_2021.rda")
 
 # Step 6: Load feed polygons
-roostPolygons <- sf::st_read("roosts_to_roosting_situation.kml", quiet = TRUE) %>%
+roostPolygons <- sf::st_read("location_to_roosting_situation.kml", quiet = TRUE) %>%
   sf::st_transform("WGS84")
 roostPolygons <- roostPolygons %>% st_transform(32636)
 
 # Step 7: Choose and sort the list_myDates only the sampling dates only from 2021 ex: "2021-09-14"
-list_myDates <- sort(unique(as.Date(output_infection_and_traits_2021$sample_event_date_edb)), decreasing = TRUE)
+list_myDates <- sort(unique(as.Date(output_infection_and_attributes_2021$sample_event_date_edb)), decreasing = TRUE)
 class(list_myDates)  # Displaying the class of list_myDates
 list_myDates  # Displaying the content of list_myDates
 
