@@ -2,20 +2,20 @@
 # Social Interactions and Mycoplasma Infection in Griffon Vultures
 
 ## Authors
-- Elvira D’Bastiani1*#
-- Nili Anglister2#
-- Inna Lysynyansky3
-- Inna Mikula3
-- Marta Acácio2
-- Gideon Vaadia2
-- Kaija Gahm1
-- Orr Spiegel2 - (PI)
-- Noa Pinter-Wollman1 Project Title (PI)
+- Elvira D’Bastiani*# (1)
+- Nili Anglister# (2)
+- Inna Lysynyansky (3)
+- Inna Mikula (3)
+- Marta Acácio (2)
+- Gideon Vaadia (2)
+- Kaija Gahm (1)
+- Orr Spiegel (2)(PI)
+- Noa Pinter-Wollman (1)(PI)
 
 ## institutions
-- 1Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
-- 2School of Zoology, Faculty of Life Sciences, Tel Aviv University, Tel Aviv, Israel.
-- 3Mycoplasma unit, Department of Avian Diseases, Professor Kimron Str 1, Kimron Veterinary Institute (KVI), POB12, Beit Dagan, Israel.
+- (1) Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
+- (2) School of Zoology, Faculty of Life Sciences, Tel Aviv University, Tel Aviv, Israel.
+- (3) Mycoplasma unit, Department of Avian Diseases, Professor Kimron Str 1, Kimron Veterinary Institute (KVI), POB12, Beit Dagan, Israel.
 
 #These authors contributed equally.
 
