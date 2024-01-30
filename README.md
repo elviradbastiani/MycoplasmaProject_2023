@@ -40,8 +40,8 @@ Uncovering the ways in which pathogens spread has important implications for pop
 feeding, infectious disease, movement ecology, pathogen transmission, roosting, social interactions.
 
 Naming:
-Manuscript (Branch)
-  Folder 1. Data
+**Manuscript (Branch)**
+  **Folder 1. Data**
             File 1. Movebank_2021_day_1_meters_25_window_14.rda
             File 2. Movebank_2021_day_2_meters_25_window_14.rda
             File 3. Movebank_2021_day_3_meters_25_window_14.rda
@@ -55,7 +55,7 @@ Manuscript (Branch)
             File 11. output_infection_and_attributes_2021.rda
             File 12. output_infection_and_attributes_2022.rda
             
-  Folder 2. Code
+  **Folder 2. Code**
            File 1. README.txt  
            File 2. Script_1a_Creating_networks_to_co_feeding.R - Script to creating networks to co-feeding interactions.
            File 3. Script_1b_Creating_networks_to_co_roosting.R - Script to creating networks to co_roosting interactions.
@@ -64,7 +64,7 @@ Manuscript (Branch)
 
 
     
-  Folder 3. Sensitivity analysis for spatial distance effect
+  **Folder 3. Sensitivity analysis for spatial distance effect**
     Co-feeding:
             File 1. README.txt
             File 2. results_DI_100meters_14days.txt
@@ -88,7 +88,7 @@ Manuscript (Branch)
             File 9. results_IND_75meters_14days.txt
 
 
-  Folder 4. Sensitivity analysis for time window effect
+  **Folder 4. Sensitivity analysis for time window effect**
     Co-feeding:
             File 1. README.txt
             File 2. results_DI_25meters_14days.txt
@@ -111,7 +111,7 @@ Manuscript (Branch)
             File 8. results_IND_25meters_28days.txt
             File 9. results_IND_25meters_7days.txt
           
-  Folder 5. Main results
+  **Folder 5. Main results**
             File 1. README.txt
             File 2. cofeeding_results_DI_25meters_14days.txt
             File 3. cofeeding_results_IND_25meters_14days.txt
