@@ -39,8 +39,10 @@ Uncovering the ways in which pathogens spread has important implications for pop
 ## Keywords
 feeding, infectious disease, movement ecology, pathogen transmission, roosting, social interactions.
 
-Naming:
+**NAMING**
+
 **Manuscript (Branch)**
+
   **Folder 1. Data**
             
             - File 1. Movebank_2021_day_1_meters_25_window_14.rda
@@ -69,6 +71,7 @@ Naming:
   **Folder 3. Sensitivity analysis for spatial distance effect**
     
     Co-feeding:
+    
             - File 1. README.txt
             - File 2. results_DI_100meters_14days.txt
             - File 3. results_DI_10meters_14days.txt
@@ -80,6 +83,7 @@ Naming:
             - File 9. results_IND_75meters_14days.txt
   
     Co-roosting:
+    
             - File 1. README.txt
             - File 2. results_DI_100meters_14days.txt
             - File 3. results_DI_10meters_14days.txt
@@ -92,7 +96,9 @@ Naming:
 
 
   **Folder 4. Sensitivity analysis for time window effect**
+    
     Co-feeding:
+    
             - File 1. README.txt
             - File 2. results_DI_25meters_14days.txt
             - File 3. results_DI_25meters_21days.txt
@@ -104,6 +110,7 @@ Naming:
             - File 9. results_IND_25meters_7days.txt
   
   Co-roosting:
+  
             - File 1. README.txt
             - File 2. results_DI_25meters_14days.txt
             - File 3. results_DI_25meters_21days.txt
@@ -123,33 +130,22 @@ Naming:
             - File 5. coroosting_results_IND_25meters_14days.txt
 
 **File formats:**
-  i.	Databases: .txt, .rda
-  ii.	Geospatial: .kml
-  iii.	Images: png
-  vi.	Text: pdf
+
+           i.	Databases: .txt, .rda
+           ii.	Geospatial: .kml
+           iii.	Images: png
+           vi.	Text: pdf
 
 **Units of measurement:**
-  i. meters
-  ii. seconds, minutes, hour, days
+
+          i. meters
+          ii. seconds, minutes, hour, days
   
 **Data formats:**
-  i. DDMMYYYY
-  ii. YYYYMMDD
+
+          i. DDMMYYYY
+          ii. YYYYMMDD
   
 **Software:**
-  i. R version 4.3.1 (R Core Team, 2013)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          i. R version 4.3.1 (R Core Team, 2013)
