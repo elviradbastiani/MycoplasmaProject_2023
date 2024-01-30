@@ -141,7 +141,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
 
           i. m = meters
           ii. sec = seconds
-          ii. min = minutes
+          iii. min = minutes
           iv. h = hour
           v. days
   
