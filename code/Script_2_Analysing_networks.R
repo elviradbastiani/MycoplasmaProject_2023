@@ -10,6 +10,8 @@
 # *Corresponding author: Elvira D'Bastiani e-mail: elviradbastiani@gmail.com
 #*****************************************************************************************
 
+Citation: D’Bastiani, E.*, Anglister, N., Lysynyansky, I., Mikula, I., Acácio, M., Vaadia, G., Gahm, K., Spiegel, O., Pinter-Wollman, N. "Social Interactions and Mycoplasma Infection in Griffon Vultures." Journal of [Journal Name], [Year], [Volume(Issue)], [Page Range]. DOI: [DOI Number].
+
 ###############################################################################################################################
 ###############################################################################################################################
 #Script to analyzing the social networks of griffon vultures
