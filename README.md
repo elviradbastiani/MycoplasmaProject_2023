@@ -54,8 +54,6 @@ Manuscript (Branch)
             File 10. location_roosting_situation.kml
             File 11. output_infection_and_attributes_2021.rda
             File 12. output_infection_and_attributes_2022.rda
-
-
             
   Folder 2. Code
            File 1. README.txt  
@@ -67,72 +65,75 @@ Manuscript (Branch)
 
     
   Folder 3. Sensitivity analysis for spatial distance effect
-  Co-feeding:
-          File 1. README.txt
-          File 2. results_DI_100meters_14days.txt
-          File 3. results_DI_10meters_14days.txt
-          File 4. results_DI_50meters_14days.txt
-          File 5. results_DI_75meters_14days.txt
-          File 6. results_IND_100meters_14days.txt
-          File 7. results_IND_10meters_14days.txt
-          File 8. results_IND_50meters_14days.txt
-          File 9. results_IND_75meters_14days.txt
+    Co-feeding:
+            File 1. README.txt
+            File 2. results_DI_100meters_14days.txt
+            File 3. results_DI_10meters_14days.txt
+            File 4. results_DI_50meters_14days.txt
+            File 5. results_DI_75meters_14days.txt
+            File 6. results_IND_100meters_14days.txt
+            File 7. results_IND_10meters_14days.txt
+            File 8. results_IND_50meters_14days.txt
+            File 9. results_IND_75meters_14days.txt
+  
+    Co-roosting:
+            File 1. README.txt
+            File 2. results_DI_100meters_14days.txt
+            File 3. results_DI_10meters_14days.txt
+            File 4. results_DI_50meters_14days.txt
+            File 5. results_DI_75meters_14days.txt
+            File 6. results_IND_100meters_14days.txt
+            File 7. results_IND_10meters_14days.txt
+            File 8. results_IND_50meters_14days.txt
+            File 9. results_IND_75meters_14days.txt
 
+
+  Folder 4. Sensitivity analysis for time window effect
+    Co-feeding:
+            File 1. README.txt
+            File 2. results_DI_25meters_14days.txt
+            File 3. results_DI_25meters_21days.txt
+            File 4. results_DI_25meters_28days.txt
+            File 5. results_DI_25meters_7days.txt
+            File 6. results_IND_25meters_14days.txt
+            File 7. results_IND_25meters_21days.txt
+            File 8. results_IND_25meters_28days.txt
+            File 9. results_IND_25meters_7days.txt
+  
   Co-roosting:
-          File 1. README.txt
-          File 2. results_DI_100meters_14days.txt
-          File 3. results_DI_10meters_14days.txt
-          File 4. results_DI_50meters_14days.txt
-          File 5. results_DI_75meters_14days.txt
-          File 6. results_IND_100meters_14days.txt
-          File 7. results_IND_10meters_14days.txt
-          File 8. results_IND_50meters_14days.txt
-          File 9. results_IND_75meters_14days.txt
-
-
-  Folder 3. Sensitivity analysis for time window effect
-  Co-feeding:
-          File 1. README.txt
-          File 2. results_DI_25meters_14days.txt
-          File 3. results_DI_25meters_21days.txt
-          File 4. results_DI_25meters_28days.txt
-          File 5. results_DI_25meters_7days.txt
-          File 6. results_IND_25meters_14days.txt
-          File 7. results_IND_25meters_21days.txt
-          File 8. results_IND_25meters_28days.txt
-          File 9. results_IND_25meters_7days.txt
-
-Co-roosting:
-          File 1. README.txt
-          File 2. results_DI_25meters_14days.txt
-          File 3. results_DI_25meters_21days.txt
-          File 4. results_DI_25meters_28days.txt
-          File 5. results_DI_25meters_7days.txt
-          File 6. results_IND_25meters_14days.txt
-          File 7. results_IND_25meters_21days.txt
-          File 8. results_IND_25meters_28days.txt
-          File 9. results_IND_25meters_7days.txt
+            File 1. README.txt
+            File 2. results_DI_25meters_14days.txt
+            File 3. results_DI_25meters_21days.txt
+            File 4. results_DI_25meters_28days.txt
+            File 5. results_DI_25meters_7days.txt
+            File 6. results_IND_25meters_14days.txt
+            File 7. results_IND_25meters_21days.txt
+            File 8. results_IND_25meters_28days.txt
+            File 9. results_IND_25meters_7days.txt
           
-  Folder 4. Main results
+  Folder 5. Main results
+            File 1. README.txt
+            File 2. cofeeding_results_DI_25meters_14days.txt
+            File 3. cofeeding_results_IND_25meters_14days.txt
+            File 4. coroosting_results_DI_25meters_14days.txt
+            File 5. coroosting_results_IND_25meters_14days.txt
 
+File formats:
+  i.	Databases: .txt, .rda
+  ii.	Geospatial: .kml
+  iii.	Images: png
+  vi.	Text: pdf
 
-
-All statistical analysis in R version 4.3.1 (R Core Team, 2013)
-
-
-
-Project# - three-digit project code according the list below
-Type – Identifies the type of data collected or the type of text or analysis file, according to codes/abbreviations below
-Source – Identifies Equipment/Model or software version upon which data was collected or file was created, according to codes below
-Condition- Identifies the experimental variable associated with this file, according to the codes below
-Version – Identifies which iteration of this file this is (V1, V2, V3.1) Increases before the decimal = major updates, after the decimal = minor updates
-
-
-
-20221009-067-SeqRaw-iSeq100-WT13-V1.seq
-20220314-048-DatAn-EXC-ALL-V2.1.csv
-
-
+Units of measurement:
+  i. meters
+  ii. seconds, minutes, hour, days
+  
+Data formats: 
+  i. DDMMYYYY
+  ii. YYYYMMDD
+  
+Software: 
+  i. R version 4.3.1 (R Core Team, 2013)
 
 
 
