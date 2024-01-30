@@ -1,5 +1,5 @@
 
-# Social interactions do not affect Mycoplasma spp. infection in griffon vultures
+# Social interactions do not affect _Mycoplasma spp._ infection in griffon vultures
 
 ## Authors
 - Elvira D’Bastiani*# (1)
