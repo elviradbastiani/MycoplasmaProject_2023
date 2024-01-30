@@ -9,8 +9,8 @@
 - Marta Acácio (2)
 - Gideon Vaadia (2)
 - Kaija Gahm (1)
-- Orr Spiegel (2)(PI)
-- Noa Pinter-Wollman (1)(PI)
+- Orr Spiegel (2) (PI)
+- Noa Pinter-Wollman (1) (PI)
 
 ## Institutions
 - (1) Department of Ecology and Evolutionary Biology, University of California Los Angeles, Los Angeles, California, USA
