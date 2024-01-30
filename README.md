@@ -133,13 +133,17 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
 
            i.	Databases: .txt, .rda
            ii.	Geospatial: .kml
-           iii.	Images: png
-           vi.	Text: pdf
+           iii.	Scripts: .r
+           vi.	Images: png
+           v.	Text: pdf
 
 **Units of measurement:**
 
-          i. meters
-          ii. seconds, minutes, hour, days
+          i. m = meters
+          ii. sex = seconds
+          ii. min = minutes
+          iv. h = hour
+          v. days
   
 **Data formats:**
 
@@ -151,6 +155,5 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
           i. R version 4.3.1 (R Core Team, 2013)
 
 **Citation:**
-
-          D’Bastiani, E.*, Anglister, N., Lysynyansky, I., Mikula, I., Acácio, M., Vaadia, G., Gahm, K., Spiegel, O., Pinter-Wollman, N. "Social Interactions and Mycoplasma Infection in Griffon Vultures." Journal of [Journal Name], [Year], [Volume(Issue)], [Page Range]. DOI: [DOI Number].
+D’Bastiani, E.*, Anglister, N., Lysynyansky, I., Mikula, I., Acácio, M., Vaadia, G., Gahm, K., Spiegel, O., Pinter-Wollman, N. "Social Interactions and Mycoplasma Infection in Griffon Vultures." Journal of [Journal Name], [Year], [Volume(Issue)], [Page Range]. DOI: [DOI Number].
 
