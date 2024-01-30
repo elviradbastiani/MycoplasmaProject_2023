@@ -46,6 +46,7 @@ library(performance) # is used for assessing and comparing the performance of st
 library(DHARMa) # is a package for checking the distributional assumptions of regression models
 library(lme4) # is a package for fitting linear mixed-effects models (LMMs) and generalized linear mixed-effects models (GLMMs). It extends the functionality of the base R `lm()` function to handle hierarchical and nested data structures.
 library(broom.mixed) # is an extension of the broom package, which provides a consistent approach to tidying model outputs in R. broom.mixed specifically extends this functionality to mixed-effects models (LMMs and GLMMs) fitted with the lme4 package.
+library(car) # is useful for examining assumptions, detecting outliers, and assessing model fit in regression models
 
 #*##############################
 # DIRECT AND INDIRECT NETWORK
@@ -71,10 +72,10 @@ results_IND <- read.table("output_infection_cofeeding_indirect.txt", sep = " ")
 
 # Step 10: Group by 'id' and select the first sampling date for indirect infection data
 results_indirect <- results_IND %>%
-                  group_by(id) %>%
-                  arrange(sampling_date) %>%
-                  slice(1) %>%
-                  ungroup()
+  group_by(id) %>%
+  arrange(sampling_date) %>%
+  slice(1) %>%
+  ungroup()
 
 # Step 11: Print the dimensions of the new data frame for indirect infection data
 dim(results_indirect)
@@ -96,6 +97,31 @@ mod1_direct <- glmer(infection ~ scale(degree) + scale(strength) +
                        scale(betweenness) + as.factor(age) + (1|sampling_date), data = results_direct, family = binomial())
 
 # Step 14: Check the assumptions of the GLMM
+
+# Diagnostic plots for fixed effects
+par(mfrow = c(2, 2))
+plot(fitted(mod1_direct), residuals(mod1_direct), main = "Fixed Effects - Fitted vs Residuals")
+abline(h = 0, col = "red", lty = 2)
+qqnorm(residuals(mod1_direct), main = "Fixed Effects - Normal Q-Q Plot")
+qqline(residuals(mod1_direct), col = "red", lty = 2)
+hist(residuals(mod1_direct), main = "Fixed Effects - Histogram")
+
+# Collinearity of fixed effects
+vif_fixed <- car::vif(mod1_direct)
+
+# Diagnostic plots for random effects
+ranef_plot <- ranef(mod1_direct)
+plot(ranef_plot)
+
+# Homoscedasticity and independence of residuals
+plot(mod1_direct, resid(., type = "pearson"), main = "Homoscedasticity - Pearson Residuals")
+plot(mod1_direct, resid(., type = "response"), main = "Independence - Response Residuals")
+
+#  Normality of residuals
+shapiro_test <- shapiro.test(resid(mod1_direct))
+print(shapiro_test)
+
+# See the visual check of various model assumptions (normality of residuals, normality of random effects, linear relationship, homogeneity of variance, multicollinearity).
 check_model(mod1_direct)
 
 # Step 15: Display a summary of the GLMM
@@ -222,16 +248,16 @@ r3_direct
 
 # Step 28: Arrange the three plots in one row
 plots <- ggarrange(r1_direct, r2_direct, r3_direct,
-                 labels = c("a.", "b.", "c."), 
-                 ncol = 3, 
-                 nrow = 1,
-                 font.label = list(size = 30, family = "Helvetica", color = "black"),
-                 hjust = -0.5, 
-                 common.legend = T)
+                   labels = c("a.", "b.", "c."), 
+                   ncol = 3, 
+                   nrow = 1,
+                   font.label = list(size = 30, family = "Helvetica", color = "black"),
+                   hjust = -0.5, 
+                   common.legend = T)
 
 # Step 29: Annotate the arranged plots
 annotate_figure(plots, left = text_grob(" ", face = "bold", 
-                                       color = "black", family = "Helvetica", rot = 90, size = 40),
+                                        color = "black", family = "Helvetica", rot = 90, size = 40),
                 top = text_grob(" ", color = "black", family = "Helvetica",
                                 face = "bold", size = 41),
                 bottom = text_grob(" ", color = "black", family = "Helvetica",
@@ -254,6 +280,31 @@ mod1_indirect <- glmer(infection ~ scale(degree) + scale(strength) +
                          scale(betweenness) + as.factor(age) + (1|sampling_date), data = results_indirect, family = binomial())
 
 # Step 33: Check the assumptions of the fitted model
+
+# Diagnostic plots for fixed effects
+par(mfrow = c(2, 2))
+plot(fitted(mod1_indirect), residuals(mod1_indirect), main = "Fixed Effects - Fitted vs Residuals")
+abline(h = 0, col = "red", lty = 2)
+qqnorm(residuals(mod1_indirect), main = "Fixed Effects - Normal Q-Q Plot")
+qqline(residuals(mod1_indirect), col = "red", lty = 2)
+hist(residuals(mod1_indirect), main = "Fixed Effects - Histogram")
+
+# Collinearity of fixed effects
+vif_fixed <- car::vif(mod1_indirect)
+
+# Diagnostic plots for random effects
+ranef_plot <- ranef(mod1_indirect)
+plot(ranef_plot)
+
+# Homoscedasticity and independence of residuals
+plot(mod1_indirect, resid(., type = "pearson"), main = "Homoscedasticity - Pearson Residuals")
+plot(mod1_indirect, resid(., type = "response"), main = "Independence - Response Residuals")
+
+#  Normality of residuals
+shapiro_test <- shapiro.test(resid(mod1_indirect))
+print(shapiro_test)
+
+# See the visual check of various model assumptions (normality of residuals, normality of random effects, linear relationship, homogeneity of variance, multicollinearity).
 check_model(mod1_indirect)
 
 # Step 34: Display a summary of the fitted GLMM
@@ -419,8 +470,8 @@ class(mod1_direct_table)
 
 # Step 54: Combine the two data frames (mod1_direct_table and mod1_indirect_table) with an added "Model" column
 combined_table <- bind_rows(
-                  mod1_direct_table %>% mutate(Model = "mod1_direct"),
-                  mod1_indirect_table %>% mutate(Model = "mod1_indirect"))
+  mod1_direct_table %>% mutate(Model = "mod1_direct"),
+  mod1_indirect_table %>% mutate(Model = "mod1_indirect"))
 
 # Step 55: Print or use the combined data frame
 print(combined_table)
@@ -459,6 +510,7 @@ library(performance) # is used for assessing and comparing the performance of st
 library(DHARMa) # is a package for checking the distributional assumptions of regression models
 library(lme4) # is a package for fitting linear mixed-effects models (LMMs) and generalized linear mixed-effects models (GLMMs). It extends the functionality of the base R `lm()` function to handle hierarchical and nested data structures.
 library(broom.mixed) # is an extension of the broom package, which provides a consistent approach to tidying model outputs in R. broom.mixed specifically extends this functionality to mixed-effects models (LMMs and GLMMs) fitted with the lme4 package.
+library(car) # is useful for examining assumptions, detecting outliers, and assessing model fit in regression models
 
 #*##############################
 # DIRECT AND INDIRECT NETWORK
@@ -509,6 +561,31 @@ mod1_direct <- glmer(infection ~ scale(degree) + scale(strength) +
                        scale(betweenness) + as.factor(age) + (1|sampling_date), data = results_direct, family = binomial())
 
 # Step 14: Check the assumptions of the GLMM
+
+# Diagnostic plots for fixed effects
+par(mfrow = c(2, 2))
+plot(fitted(mod1_direct), residuals(mod1_direct), main = "Fixed Effects - Fitted vs Residuals")
+abline(h = 0, col = "red", lty = 2)
+qqnorm(residuals(mod1_direct), main = "Fixed Effects - Normal Q-Q Plot")
+qqline(residuals(mod1_direct), col = "red", lty = 2)
+hist(residuals(mod1_direct), main = "Fixed Effects - Histogram")
+
+# Collinearity of fixed effects
+vif_fixed <- car::vif(mod1_direct)
+
+# Diagnostic plots for random effects
+ranef_plot <- ranef(mod1_direct)
+plot(ranef_plot)
+
+# Homoscedasticity and independence of residuals
+plot(mod1_direct, resid(., type = "pearson"), main = "Homoscedasticity - Pearson Residuals")
+plot(mod1_direct, resid(., type = "response"), main = "Independence - Response Residuals")
+
+#  Normality of residuals
+shapiro_test <- shapiro.test(resid(mod1_direct))
+print(shapiro_test)
+
+# See the visual check of various model assumptions (normality of residuals, normality of random effects, linear relationship, homogeneity of variance, multicollinearity).
 check_model(mod1_direct)
 
 # Step 15: Display a summary of the GLMM
@@ -667,6 +744,31 @@ mod1_indirect <- glmer(infection ~ scale(degree) + scale(strength) +
                          scale(betweenness) + as.factor(age) + (1|sampling_date), data = results_indirect, family = binomial())
 
 # Step 33: Check the assumptions of the fitted model
+
+# Diagnostic plots for fixed effects
+par(mfrow = c(2, 2))
+plot(fitted(mod1_indirect), residuals(mod1_indirect), main = "Fixed Effects - Fitted vs Residuals")
+abline(h = 0, col = "red", lty = 2)
+qqnorm(residuals(mod1_indirect), main = "Fixed Effects - Normal Q-Q Plot")
+qqline(residuals(mod1_indirect), col = "red", lty = 2)
+hist(residuals(mod1_indirect), main = "Fixed Effects - Histogram")
+
+# Collinearity of fixed effects
+vif_fixed <- car::vif(mod1_indirect)
+
+# Diagnostic plots for random effects
+ranef_plot <- ranef(mod1_indirect)
+plot(ranef_plot)
+
+# Homoscedasticity and independence of residuals
+plot(mod1_indirect, resid(., type = "pearson"), main = "Homoscedasticity - Pearson Residuals")
+plot(mod1_indirect, resid(., type = "response"), main = "Independence - Response Residuals")
+
+#  Normality of residuals
+shapiro_test <- shapiro.test(resid(mod1_indirect))
+print(shapiro_test)
+
+# See the visual check of various model assumptions (normality of residuals, normality of random effects, linear relationship, homogeneity of variance, multicollinearity).
 check_model(mod1_indirect)
 
 # Step 34: Display a summary of the fitted GLMM
