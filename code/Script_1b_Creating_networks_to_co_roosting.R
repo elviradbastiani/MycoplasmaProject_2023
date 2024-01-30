@@ -47,10 +47,8 @@ library(ggpubr)
 # Step 5: Loading the sampled data for mycoplasma sampling data of individuals used in 2021 #OBSERVATION: To test to 2022, simply change the year throughout the entire script.
 load("output_infection_and_attributes_2021.rda")
 
-# Step 6: Load feed polygons
-roostPolygons <- sf::st_read("location_to_roosting_situation.kml", quiet = TRUE) %>%
-  sf::st_transform("WGS84")
-roostPolygons <- roostPolygons %>% st_transform(32636)
+# Step 6: See the dimension
+dim(output_infection_and_attributes_2021)
 
 # Step 7: Choose and sort the list_myDates only the sampling dates only from 2021 ex: "2021-09-14"
 list_myDates <- sort(unique(as.Date(output_infection_and_attributes_2021$sample_event_date_edb)), decreasing = TRUE)
