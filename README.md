@@ -70,7 +70,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
     
   **Folder 3. Sensitivity analysis for spatial distance effect**
     
-    Co-feeding:
+    Co-feeding situation:
     
             - File 1. README.txt
             - File 2. results_DI_100meters_14days.txt
@@ -82,7 +82,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
             - File 8. results_IND_50meters_14days.txt
             - File 9. results_IND_75meters_14days.txt
   
-    Co-roosting:
+    Co-roosting situation:
     
             - File 1. README.txt
             - File 2. results_DI_100meters_14days.txt
@@ -97,7 +97,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
 
   **Folder 4. Sensitivity analysis for time window effect**
     
-    Co-feeding:
+    Co-feeding situation:
     
             - File 1. README.txt
             - File 2. results_DI_25meters_14days.txt
@@ -109,7 +109,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
             - File 8. results_IND_25meters_28days.txt
             - File 9. results_IND_25meters_7days.txt
   
-  Co-roosting:
+  Co-roosting situation:
   
             - File 1. README.txt
             - File 2. results_DI_25meters_14days.txt
