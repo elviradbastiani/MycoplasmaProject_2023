@@ -140,7 +140,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
 **Units of measurement:**
 
           i. m = meters
-          ii. sex = seconds
+          ii. sec = seconds
           ii. min = minutes
           iv. h = hour
           v. days
