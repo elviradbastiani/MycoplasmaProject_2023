@@ -42,97 +42,97 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
 Naming:
 **Manuscript (Branch)**
   **Folder 1. Data**
-            File 1. Movebank_2021_day_1_meters_25_window_14.rda
-            File 2. Movebank_2021_day_2_meters_25_window_14.rda
-            File 3. Movebank_2021_day_3_meters_25_window_14.rda
-            File 4. Movebank_2021_day_4_meters_25_window_14.rda
-            File 5. Movebank_2021_day_5_meters_25_window_14.rda
-            File 6. Movebank_2022_day_1_meters_25_window_14.rda
-            File 7. Movebank_2022_day_2_meters_25_window_14.rda
-            File 8. README.txt
-            File 9. location_to_feeding_situation.kml
-            File 10. location_roosting_situation.kml
-            File 11. output_infection_and_attributes_2021.rda
-            File 12. output_infection_and_attributes_2022.rda
+            - File 1. Movebank_2021_day_1_meters_25_window_14.rda
+            - File 2. Movebank_2021_day_2_meters_25_window_14.rda
+            - File 3. Movebank_2021_day_3_meters_25_window_14.rda
+            - File 4. Movebank_2021_day_4_meters_25_window_14.rda
+            - File 5. Movebank_2021_day_5_meters_25_window_14.rda
+            - File 6. Movebank_2022_day_1_meters_25_window_14.rda
+            - File 7. Movebank_2022_day_2_meters_25_window_14.rda
+            - File 8. README.txt
+            - File 9. location_to_feeding_situation.kml
+            - File 10. location_roosting_situation.kml
+            - File 11. output_infection_and_attributes_2021.rda
+            - File 12. output_infection_and_attributes_2022.rda
             
   **Folder 2. Code**
-           File 1. README.txt  
-           File 2. Script_1a_Creating_networks_to_co_feeding.R - Script to creating networks to co-feeding interactions.
-           File 3. Script_1b_Creating_networks_to_co_roosting.R - Script to creating networks to co_roosting interactions.
-           File 4. Script_2_Analysing_networks.R - Script to analysing the social position in the network (degree, betweenness, and strength) of griffon vultures.
-          File 5. Script_3_GLMM_analysis.R - Script to analysing the relationship between mycoplasma infection status and social position (degree, betweenness, and strength) of griffon vultures.
+           - File 1. README.txt  
+           - File 2. Script_1a_Creating_networks_to_co_feeding.R - Script to creating networks to co-feeding interactions.
+           - File 3. Script_1b_Creating_networks_to_co_roosting.R - Script to creating networks to co_roosting interactions.
+           - File 4. Script_2_Analysing_networks.R - Script to analysing the social position in the network (degree, betweenness, and strength) of griffon vultures.
+          - File 5. Script_3_GLMM_analysis.R - Script to analysing the relationship between mycoplasma infection status and social position (degree, betweenness, and strength) of griffon vultures.
 
 
     
   **Folder 3. Sensitivity analysis for spatial distance effect**
     Co-feeding:
-            File 1. README.txt
-            File 2. results_DI_100meters_14days.txt
-            File 3. results_DI_10meters_14days.txt
-            File 4. results_DI_50meters_14days.txt
-            File 5. results_DI_75meters_14days.txt
-            File 6. results_IND_100meters_14days.txt
-            File 7. results_IND_10meters_14days.txt
-            File 8. results_IND_50meters_14days.txt
-            File 9. results_IND_75meters_14days.txt
+            - File 1. README.txt
+            - File 2. results_DI_100meters_14days.txt
+            - File 3. results_DI_10meters_14days.txt
+            - File 4. results_DI_50meters_14days.txt
+            - File 5. results_DI_75meters_14days.txt
+            - File 6. results_IND_100meters_14days.txt
+            - File 7. results_IND_10meters_14days.txt
+            - File 8. results_IND_50meters_14days.txt
+            - File 9. results_IND_75meters_14days.txt
   
     Co-roosting:
-            File 1. README.txt
-            File 2. results_DI_100meters_14days.txt
-            File 3. results_DI_10meters_14days.txt
-            File 4. results_DI_50meters_14days.txt
-            File 5. results_DI_75meters_14days.txt
-            File 6. results_IND_100meters_14days.txt
-            File 7. results_IND_10meters_14days.txt
-            File 8. results_IND_50meters_14days.txt
-            File 9. results_IND_75meters_14days.txt
+            - File 1. README.txt
+            - File 2. results_DI_100meters_14days.txt
+            - File 3. results_DI_10meters_14days.txt
+            - File 4. results_DI_50meters_14days.txt
+            - File 5. results_DI_75meters_14days.txt
+            - File 6. results_IND_100meters_14days.txt
+            - File 7. results_IND_10meters_14days.txt
+            - File 8. results_IND_50meters_14days.txt
+            - File 9. results_IND_75meters_14days.txt
 
 
   **Folder 4. Sensitivity analysis for time window effect**
     Co-feeding:
-            File 1. README.txt
-            File 2. results_DI_25meters_14days.txt
-            File 3. results_DI_25meters_21days.txt
-            File 4. results_DI_25meters_28days.txt
-            File 5. results_DI_25meters_7days.txt
-            File 6. results_IND_25meters_14days.txt
-            File 7. results_IND_25meters_21days.txt
-            File 8. results_IND_25meters_28days.txt
-            File 9. results_IND_25meters_7days.txt
+            - File 1. README.txt
+            - File 2. results_DI_25meters_14days.txt
+            - File 3. results_DI_25meters_21days.txt
+            - File 4. results_DI_25meters_28days.txt
+            - File 5. results_DI_25meters_7days.txt
+            - File 6. results_IND_25meters_14days.txt
+            - File 7. results_IND_25meters_21days.txt
+            - File 8. results_IND_25meters_28days.txt
+            - File 9. results_IND_25meters_7days.txt
   
   Co-roosting:
-            File 1. README.txt
-            File 2. results_DI_25meters_14days.txt
-            File 3. results_DI_25meters_21days.txt
-            File 4. results_DI_25meters_28days.txt
-            File 5. results_DI_25meters_7days.txt
-            File 6. results_IND_25meters_14days.txt
-            File 7. results_IND_25meters_21days.txt
-            File 8. results_IND_25meters_28days.txt
-            File 9. results_IND_25meters_7days.txt
+            - File 1. README.txt
+            - File 2. results_DI_25meters_14days.txt
+            - File 3. results_DI_25meters_21days.txt
+            - File 4. results_DI_25meters_28days.txt
+            - File 5. results_DI_25meters_7days.txt
+            - File 6. results_IND_25meters_14days.txt
+            - File 7. results_IND_25meters_21days.txt
+            - File 8. results_IND_25meters_28days.txt
+            - File 9. results_IND_25meters_7days.txt
           
   **Folder 5. Main results**
-            File 1. README.txt
-            File 2. cofeeding_results_DI_25meters_14days.txt
-            File 3. cofeeding_results_IND_25meters_14days.txt
-            File 4. coroosting_results_DI_25meters_14days.txt
-            File 5. coroosting_results_IND_25meters_14days.txt
+            - File 1. README.txt
+            - File 2. cofeeding_results_DI_25meters_14days.txt
+            - File 3. cofeeding_results_IND_25meters_14days.txt
+            - File 4. coroosting_results_DI_25meters_14days.txt
+            - File 5. coroosting_results_IND_25meters_14days.txt
 
-File formats:
+**File formats:**
   i.	Databases: .txt, .rda
   ii.	Geospatial: .kml
   iii.	Images: png
   vi.	Text: pdf
 
-Units of measurement:
+**Units of measurement:**
   i. meters
   ii. seconds, minutes, hour, days
   
-Data formats: 
+**Data formats:**
   i. DDMMYYYY
   ii. YYYYMMDD
   
-Software: 
+**Software:**
   i. R version 4.3.1 (R Core Team, 2013)
 
 
