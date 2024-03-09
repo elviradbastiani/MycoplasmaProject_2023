@@ -63,6 +63,10 @@ results_direct <- results_DI %>%
   slice(1) %>%
   ungroup()
 
+#Here in the step 7 the `results_DI %>%`: This indicates that the following operations will be performed on the dataset `results_DI`. The `group_by(id) %>%`: Groups the dataset by the unique identifier `id`. This means that subsequent operations will be applied separately for each distinct group of `id`.
+#`arrange(sampling_date) %>%`: Sorts each group by the values in the `sampling_date` column in ascending order. This means that, for each `id`, the rows will be organized based on the sampling dates. `slice(1) %>%`: Keeps only the first row of each group after sorting. This is done using the `slice(1)` function, which retains only the first row of each group.
+#`ungroup()`: Removes the grouping structure, ensuring that the final result is a dataset without grouping. This is useful if you want to perform additional operations on the dataset without considering the previous groups. Therefore, the final result, stored in `results_DI`, will be a dataset containing only the first row of each `id` group, based on the sorting of sampling dates.
+
 # Step 8: Print the dimensions of the new data frame for direct infection data
 dim(results_direct)
 print(results_direct)
@@ -76,6 +80,10 @@ results_indirect <- results_IND %>%
   arrange(sampling_date) %>%
   slice(1) %>%
   ungroup()
+
+#Here in the step 10 the `results_IND %>%`: This indicates that the following operations will be performed on the dataset `results_IND`. The `group_by(id) %>%`: Groups the dataset by the unique identifier `id`. This means that subsequent operations will be applied separately for each distinct group of `id`.
+#`arrange(sampling_date) %>%`: Sorts each group by the values in the `sampling_date` column in ascending order. This means that, for each `id`, the rows will be organized based on the sampling dates. `slice(1) %>%`: Keeps only the first row of each group after sorting. This is done using the `slice(1)` function, which retains only the first row of each group.
+#`ungroup()`: Removes the grouping structure, ensuring that the final result is a dataset without grouping. This is useful if you want to perform additional operations on the dataset without considering the previous groups. Therefore, the final result, stored in `results_IND`, will be a dataset containing only the first row of each `id` group, based on the sorting of sampling dates.
 
 # Step 11: Print the dimensions of the new data frame for indirect infection data
 dim(results_indirect)
@@ -527,6 +535,10 @@ results_direct <- results_DI %>%
   slice(1) %>%
   ungroup()
 
+#Here in the step 10 the `results_DI %>%`: This indicates that the following operations will be performed on the dataset `results_DI`. The `group_by(id) %>%`: Groups the dataset by the unique identifier `id`. This means that subsequent operations will be applied separately for each distinct group of `id`.
+#`arrange(sampling_date) %>%`: Sorts each group by the values in the `sampling_date` column in ascending order. This means that, for each `id`, the rows will be organized based on the sampling dates. `slice(1) %>%`: Keeps only the first row of each group after sorting. This is done using the `slice(1)` function, which retains only the first row of each group.
+#`ungroup()`: Removes the grouping structure, ensuring that the final result is a dataset without grouping. This is useful if you want to perform additional operations on the dataset without considering the previous groups. Therefore, the final result, stored in `results_DI`, will be a dataset containing only the first row of each `id` group, based on the sorting of sampling dates.
+
 # Step 8: Print the dimensions of the new data frame for direct infection data
 dim(results_direct)
 print(results_direct)
@@ -540,6 +552,10 @@ results_indirect <- results_IND %>%
   arrange(sampling_date) %>%
   slice(1) %>%
   ungroup()
+
+#Here in the step 10 the `results_IND %>%`: This indicates that the following operations will be performed on the dataset `results_IND`. The `group_by(id) %>%`: Groups the dataset by the unique identifier `id`. This means that subsequent operations will be applied separately for each distinct group of `id`.
+#`arrange(sampling_date) %>%`: Sorts each group by the values in the `sampling_date` column in ascending order. This means that, for each `id`, the rows will be organized based on the sampling dates. `slice(1) %>%`: Keeps only the first row of each group after sorting. This is done using the `slice(1)` function, which retains only the first row of each group.
+#`ungroup()`: Removes the grouping structure, ensuring that the final result is a dataset without grouping. This is useful if you want to perform additional operations on the dataset without considering the previous groups. Therefore, the final result, stored in `results_IND`, will be a dataset containing only the first row of each `id` group, based on the sorting of sampling dates.
 
 # Step 11: Print the dimensions of the new data frame for indirect infection data
 dim(results_indirect)
