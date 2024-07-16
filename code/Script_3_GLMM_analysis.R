@@ -63,6 +63,15 @@ results_direct <- results_DI %>%
   slice(1) %>%
   ungroup()
 
+#Step-by-Step
+#The group_by(id) function groups the data by the id variable. This means that subsequent operations will be performed within each group of unique ids.
+#The arrange(sampling_date) function sorts the data within each group by the sampling_date variable in ascending order.
+#The slice(1) function selects the first row from each group. Since the data is sorted by sampling_date, this will be the earliest sampling date for each id.
+#The ungroup() function removes the grouping structure, returning the data to a standard data frame format.
+#The purpose of this part of the script is to create a new data frame results_direct that contains only the first 
+#(earliest) sampling date for each unique id. This can be useful for analyses that require only one observation 
+#per individual, such as when assessing initial conditions or baseline measurements.
+
 #Here in the step 7 the `results_DI %>%`: This indicates that the following operations will be performed on the dataset `results_DI`. The `group_by(id) %>%`: Groups the dataset by the unique identifier `id`. This means that subsequent operations will be applied separately for each distinct group of `id`.
 #`arrange(sampling_date) %>%`: Sorts each group by the values in the `sampling_date` column in ascending order. This means that, for each `id`, the rows will be organized based on the sampling dates. `slice(1) %>%`: Keeps only the first row of each group after sorting. This is done using the `slice(1)` function, which retains only the first row of each group.
 #`ungroup()`: Removes the grouping structure, ensuring that the final result is a dataset without grouping. This is useful if you want to perform additional operations on the dataset without considering the previous groups. Therefore, the final result, stored in `results_DI`, will be a dataset containing only the first row of each `id` group, based on the sorting of sampling dates.
