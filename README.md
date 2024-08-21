@@ -43,23 +43,7 @@ feeding, infectious disease, movement ecology, pathogen transmission, roosting, 
 
 **Manuscript (Branch)**
 
-  **Folder 1. Data**
-            
-            - File 1. Movebank_2021_day_1_meters_25_window_14.rda
-            - File 2. Movebank_2021_day_2_meters_25_window_14.rda
-            - File 3. Movebank_2021_day_3_meters_25_window_14.rda
-            - File 4. Movebank_2021_day_4_meters_25_window_14.rda
-            - File 5. Movebank_2021_day_5_meters_25_window_14.rda
-            - File 6. Movebank_2022_day_1_meters_25_window_14.rda
-            - File 7. Movebank_2022_day_2_meters_25_window_14.rda
-            - File 8. README.txt
-            - File 9. location_to_feeding_situation.kml
-            - File 10. location_roosting_situation.kml
-            - File 11. output_infection_and_attributes_2021.rda
-            - File 12. output_infection_and_attributes_2022.rda
-            
-  **Folder 2. Code**
-           
+  **Folder 1. Code**           
            - File 1. README.txt  
            - File 2. Script_1a_Creating_networks_to_co_feeding.R - Script to creating networks to co-feeding interactions.
            - File 3. Script_1b_Creating_networks_to_co_roosting.R - Script to creating networks to co_roosting interactions.
